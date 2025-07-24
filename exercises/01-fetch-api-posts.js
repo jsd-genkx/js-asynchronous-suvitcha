@@ -18,7 +18,7 @@ export const fetchPostsThen = () => {
       return response.json();
     })
     .then((data) => {
-      console.log(data);
+      console.log(data.posts[0]);
     })
     .catch((error) => {
       console.log("Error occurred: ", error);
